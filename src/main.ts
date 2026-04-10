@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use((req, res, next) => {
     console.log('ada request baru');
-    next(); //klo nextnya gaada, webnya jd loading trs
+    next(); 
 })
 
 app.use('/api', GlobalPostAPI);

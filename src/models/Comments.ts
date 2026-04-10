@@ -20,13 +20,13 @@ export class Comments extends Model {
         type: DataType.STRING,
         allowNull: false,
     })
-    username!: string;
+    declare username: string;
 
     @Column({
         type: DataType.STRING,
         allowNull: false,
     })
-    content!: string;
+    declare content: string;
 
     @CreatedAt
     declare createdAt: Date;
